@@ -4,78 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal CV</title>
-    <!-- Style Table -->
-    <style>
-      table,
-      td,
-      th {
-        border: 1px solid black;
-        border-collapse: collapse;
-        padding: 2px 15px;
-      }
-    </style>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body
-    style="
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-    "
-  >
-    <nav
-      style="
-        background-color: rgb(42, 42, 42);
-        color: white;
-        padding: 10px;
-        text-align: center;
-      "
-    >
-      <a
-        href="#summary"
-        style="color: white; margin: 0 15px; text-decoration: none"
-        >Professional Summary</a
-      >
-      <a
-        href="#experience"
-        style="color: white; margin: 0 15px; text-decoration: none"
-        >Work Experience</a
-      >
-      <a
-        href="#education"
-        style="color: white; margin: 0 15px; text-decoration: none"
-        >Education</a
-      >
-      <a
-        href="#skill"
-        style="color: white; margin: 0 15px; text-decoration: none"
-        >Skills</a
-      >
-      <a
-        href="#project"
-        style="color: white; margin: 0 15px; text-decoration: none"
-        >Projects</a
-      >
-      <a
-        href="#languages"
-        style="color: white; margin: 0 15px; text-decoration: none"
-        >Languages</a
-      >
-      <a
-        href="#contact"
-        style="color: white; margin: 0 15px; text-decoration: none"
-        >Contact Me</a
-      >
+  <body>
+    <nav>
+      <a href="#summary">Professional Summary</a>
+      <a href="#experience">Work Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skill">Skills</a>
+      <a href="#project">Projects</a>
+      <a href="#languages">Languages</a>
+      <a href="#contact">Contact Me</a>
     </nav>
-    <header
-      style="background-color: aliceblue; padding: 20px; text-align: center"
-    >
+    <header>
       <h1>PUTDARARITH KIM</h1>
       <p>Email: kimputdararith@gmail.com | Phone: +855 96 25 47623</p>
       <p>Address: 41st Street, Phnom Penh</p>
     </header>
-    <section id="summary" style="padding: 25px">
+    <section id="summary">
       <h2>Professional Summary</h2>
       <p>
         A highly motivated student with over 2 years of experience in Website
@@ -83,32 +29,32 @@
         project management.
       </p>
     </section>
-    <section id="experience" style="padding: 25px">
-      <h2>Work experience</h2>
+    <section id="experience">
+      <h2>Work Experience</h2>
       <h3>Development Intern</h3>
       <p>Glean Asia</p>
       <ul>
         <li>Developed scalable web applications using Liferay CMS.</li>
         <li>
-          led a team of 4 developers to successfully deliver project on time.
+          Led a team of 4 developers to successfully deliver project on time.
         </li>
         <li>Maintained and improved system performance.</li>
       </ul>
       <h3>Full-stack Developer</h3>
       <p>ITC Mocking System</p>
       <ul>
-        <li>Design database and developed RestAPI</li>
+        <li>Designed database and developed RestAPI</li>
         <li>Developed Frontend using NextJS</li>
       </ul>
     </section>
-    <section id="experience" style="padding: 25px">
+    <section id="education">
       <h2>Education</h2>
       <h3>Bachelor of Information Technology</h3>
       <p>Institute of Technology of Cambodia, 2023 - Present.</p>
     </section>
-    <section id="skill" style="padding: 25px">
+    <section id="skill">
       <h2>Skills</h2>
-      <table style="width: 100%">
+      <table>
         <thead>
           <tr>
             <th>Programming Languages</th>
@@ -130,8 +76,8 @@
         </tbody>
       </table>
     </section>
-    <section id="project" style="padding: 25px">
-      <h2>Project</h2>
+    <section id="project">
+      <h2>Projects</h2>
       <h3>Mocking System</h3>
       <p>
         Developed a mock exam system for ITC students to practice for their
@@ -143,16 +89,16 @@
         skills and projects.
       </p>
     </section>
-    <section id="languages" style="padding: 25px">
+    <section id="languages">
       <h2>Languages</h2>
       <ul>
         <li>English: Intermediate</li>
         <li>Khmer: Mother tongue</li>
       </ul>
     </section>
-    <section id="contact" style="padding: 25px">
+    <section id="contact">
       <h2>Contact Me</h2>
-      <form action="/sumbit" method="post">
+      <form action="/submit" method="post">
         <fieldset>
           <legend>Contact Information</legend>
           <label for="username">Full Name:</label><br />
@@ -161,29 +107,23 @@
             name="username"
             id="username"
             placeholder="Enter your full name"
-          /><br />
-          <br />
+          /><br /><br />
           <label for="email">Email:</label><br />
           <input
             type="text"
             name="email"
             id="email"
             placeholder="Enter your email"
-          /><br />
-          <br />
+          /><br /><br />
           <label for="message">Message:</label><br />
           <textarea
-            style="width: 500px; height: 150px"
-            type="text"
             name="message"
             id="message"
             placeholder="Write your message here"
             required
-          >
-          </textarea
-          ><br />
-          <br />
-          <button type="submit">Send message</button>
+          ></textarea
+          ><br /><br />
+          <button type="submit">Send Message</button>
         </fieldset>
       </form>
     </section>
