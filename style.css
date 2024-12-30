@@ -10,20 +10,31 @@ body {
 nav {
   background-color: rgb(42, 42, 42);
   color: white;
-  padding: 10px;
+  padding: 0;
+  height: 100%;
   text-align: center;
 }
-
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
+nav div {
+  width: auto;
+  height: 100%;
+  padding: 20px 10px 20px 10px;
+  display: inline-block;
 }
-nav a:hover {
+nav:hover div {
+  padding: 25px 10px 25px 10px;
+  transition: 350ms;
+}
+nav div a:hover {
   color: rgb(42, 42, 42);
   background-color: white;
   border-radius: 5px;
-  padding: 5px;
+  padding: 5px 10px;
+  transition: 350;
+}
+nav div a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
 }
 
 header {
@@ -50,4 +61,12 @@ table {
 textarea {
   width: 500px;
   height: 150px;
+}
+.circle_cat {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+  border: 2px solid gray;
 }
